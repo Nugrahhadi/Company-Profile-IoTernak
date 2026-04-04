@@ -33,7 +33,7 @@ export default function About() {
             <img
               alt="IoTernak Software Dashboard"
               className="relative z-10 w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
-              src="images/features/Aplikasi-IoTernak.webp"
+              src="/images/features/Aplikasi-IoTernak.webp"
             />
             <div className="relative z-10 text-center px-4 mt-10 max-w-2xl">
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">
@@ -88,7 +88,7 @@ export default function About() {
                 <img
                   alt="Prof. Jago AI Farming Assistant Chatbot"
                   className="relative z-10 rounded-2xl max-h-[500px] sm:max-h-[720px] w-auto object-contain transition-transform duration-500 group-hover:scale-105"
-                  src="images/features/Prof.Jago.webp"
+                  src="/images/features/Prof.Jago.webp"
                 />
                 <div
                   className="absolute -top-6 -right-6 bg-white dark:bg-gray-800 p-3 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 animate-bounce"
@@ -224,7 +224,7 @@ export default function About() {
               <img
                 alt="Smart farming technology concept"
                 className="relative rounded-[2rem] shadow-2xl w-full aspect-square object-cover mx-auto ring-4 ring-white/50 dark:ring-gray-800/50"
-                src="images/features/features_ioternak.webp"
+                src="/images/features/features_ioternak.webp"
               />
             </div>
           </div>

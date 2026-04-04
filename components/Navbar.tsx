@@ -9,7 +9,9 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const isActive = (href: string) => {
-    return pathname === href;
+    if (href === "/" && pathname === "/") return true;
+    if (href !== "/" && pathname.startsWith(href)) return true;
+    return false;
   };
 
   const toggleMobileMenu = () => {
@@ -60,7 +62,6 @@ export default function Navbar() {
         ))}
       </div>
 
-      {/* Desktop CTA + Mobile Menu Button */}
       <div className="flex items-center gap-4">
         <a
           className="hidden sm:flex bg-primary hover:bg-secondary text-white px-6 py-2.5 rounded-full text-sm font-medium transition-colors shadow-lg items-center gap-2"
