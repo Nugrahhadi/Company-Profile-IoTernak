@@ -25,6 +25,7 @@ export default function Navbar() {
     { href: "/about", label: "About Us" },
     { href: "/products", label: "Products" },
     { href: "/about-brainers", label: "Team" },
+    { href: "/testimonials", label: "Testimonials" },
     { href: "/contact", label: "Contact" },
   ];
 

@@ -14,7 +14,7 @@ export default function AboutBrainers({
       name: "Nugrahhadi Al Khawarizmi",
       role: "Founder & Chief Executive Officer",
       description:
-        "With over 3 years in business & technology, Hadi leads the vision of Maggenzim. His passion lies in bridging the gap between traditional farming and modern IoT solutions to maximize livestock yield.",
+        "Berbekal pengalaman lebih dari tiga tahun di sektor bisnis dan teknologi, Hadi mengarahkan visi serta strategi utama Maggenzim. Ia memiliki dedikasi tinggi dalam menjembatani metode peternakan konvensional dengan inovasi Internet of Things (IoT) terkini, dengan fokus utama untuk mengoptimalkan efisiensi operasional dan memaksimalkan produktivitas hasil ternak.",
       specialty: "Strategic Planning & Innovation",
       image: "images/hadi.png",
       icon: "psychology",
@@ -24,7 +24,7 @@ export default function AboutBrainers({
       name: "Arga Aryanta Indrafata",
       role: "Founder & Chief Technology Officer",
       description:
-        "An expert systems architect, Arga ensures the IoTernak ecosystem is robust and scalable. He oversees the development of our sensor networks and AI-driven analytics platform.",
+        "Sebagai pakar arsitektur sistem, Arga bertanggung jawab penuh dalam memastikan keandalan, ketangguhan, dan skalabilitas ekosistem IoTernak. Ia memimpin secara komprehensif tahap pengembangan infrastruktur jaringan sensor perusahaan serta arsitektur platform analisis data berbasis kecerdasan buatan (AI).",
       specialty: "IoT Architecture & Data Science",
       image: "images/Arga.png",
       icon: "memory",
@@ -32,12 +32,32 @@ export default function AboutBrainers({
     },
     {
       name: "Lula Khaisha Delavia",
-      role: "IT Specialist",
+      role: "Creative & Marketing Manager",
       description:
-        "A dedicated IT professional who ensures the stability and security of IoTernak's technical infrastructure. Lula manages system administration, network operations, and technical support to keep our platform running smoothly and reliably.",
-      specialty: "System Administration & Infrastructure",
+        "Seorang strategist kreatif yang mendorong visi brand dan kehadiran pasar IoTernak. Lula mengembangkan kampanye marketing yang menarik dan konten kreatif yang terhubung dengan peternak dan pemangku kepentingan, memastikan pesan kami beresonansi di semua saluran.",
+      specialty: "Strategi Brand & Digital Marketing",
       image: "images/Lula_Casual.webp",
-      icon: "computer",
+      icon: "campaign",
+      linkedin: "https://linkedin.com/",
+    },
+    {
+      name: "Gita Nurmala",
+      role: "Financial Manager",
+      description:
+        "Seorang profesional keuangan berpengalaman yang mengelola kesehatan fiskal dan investasi strategis IoTernak. Gita memastikan alokasi sumber daya yang efisien dan perencanaan keuangan untuk mendukung pertumbuhan dan keberlanjutan jangka panjang kami.",
+      specialty: "Perencanaan & Manajemen Keuangan",
+      image: "images/Gita.jpg",
+      icon: "trending_up",
+      linkedin: "https://linkedin.com/",
+    },
+    {
+      name: "Farhan Ibnu Majid",
+      role: "Hardware Developer",
+      description:
+        "Seorang engineer hardware terampil yang merancang dan mengembangkan perangkat IoT untuk jaringan sensor IoTernak. Farhan membawa inovasi dalam sistem tertanam dan hardware IoT untuk menciptakan perangkat yang andal dan efisien untuk monitoring pertanian.",
+      specialty: "Hardware IoT & Embedded Systems",
+      image: "images/Farhan.webp",
+      icon: "build",
       linkedin: "https://linkedin.com/",
     },
     // {

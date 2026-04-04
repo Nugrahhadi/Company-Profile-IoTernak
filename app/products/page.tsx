@@ -1,157 +1,182 @@
 export default function Products() {
   return (
     <>
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-24">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/images/background/bg-product.webp"
-            alt="Products Background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/70"></div>
-        </div>
+      {/* Hero Section - Modern, Clean & Elegant Agritech Style */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-20 bg-white">
+        {/* Dekorasi Background Halus */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-green-50 rounded-full blur-[120px] -mr-60 -mt-60 pointer-events-none z-0"></div>
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-50 rounded-full blur-[100px] -ml-40 -mb-20 pointer-events-none z-0"></div>
 
-        {/* Content */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-6 text-center flex-grow">
-          <div className="flex flex-col items-center max-w-5xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-white mt-26 mb-5">
-              Peternakan Ayam Modern
-              <br className="hidden md:block" />
-              Dalam{" "}
-              <span className="bg-gradient-to-r from-green-400 via-green-500 to-emerald-500 bg-clip-text text-transparent">
-                Satu Genggaman
-              </span>
-            </h1>
-            <p className="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto mb-10 leading-relaxed">
-              IoTernak Ecosystem membantu peternak mengelola dan memantau
-              peternakan ayam melalui satu sistem yang praktis dan terintegrasi.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 justify-center w-full mb-12 md:mb-16 mt-6 sm:mt-0">
-              <a
-                href="#products"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:px-8 sm:py-4 bg-primary text-white rounded-full font-semibold text-sm sm:text-base md:text-lg hover:bg-green-700 transition-all shadow-lg hover:shadow-green-500/25 w-full sm:w-auto"
-              >
-                Jelajahi Produk
-                <span className="material-icons text-base sm:text-lg group-hover:translate-x-1 transition-transform">
-                  arrow_forward
+        <div className="container mx-auto px-6 max-w-7xl relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-12 xl:gap-16">
+            {/* Kolon Kiri: Teks */}
+            <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start order-1 lg:order-1">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 border border-green-200 text-green-700 text-sm font-semibold mb-6 shadow-sm">
+                <span className="relative flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                 </span>
-              </a>
-              <a
-                href="/about"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-2.5 sm:px-8 sm:py-4 bg-white/20 backdrop-blur border border-white/40 text-white rounded-full font-semibold text-sm sm:text-base md:text-lg hover:bg-white/30 transition-all w-full sm:w-auto"
-              >
-                Tentang Kami
-                <span className="material-icons text-base sm:text-lg group-hover:translate-x-1 transition-transform">
-                  east
+                Langganan Minimal, Untung Maksimal
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] text-gray-900 mb-6">
+                Rasa Aman
+                <br />
+                <span className="bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 bg-clip-text text-transparent">
+                  Dalam Genggaman
                 </span>
-              </a>
+              </h1>
+
+              <p className="text-lg md:text-xl text-gray-600 max-w-2xl lg:max-w-none mb-10 leading-relaxed font-medium">
+                Ekosistem IoTernak membantu Anda mengelola kandang lebih cerdas.
+                Fokus besarkan ayam Anda, biarkan kami yang mengurus mesin dan
+                perawatannya.
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start w-full mt-2">
+                <a
+                  href="#products"
+                  className="group relative inline-flex items-center justify-center gap-2.5 px-10 py-4 bg-green-600 text-white rounded-full font-bold text-lg overflow-hidden transition-all shadow-[0_10px_30px_rgba(22,163,74,0.3)] hover:shadow-[0_10px_40px_rgba(22,163,74,0.5)] w-full sm:w-auto hover:-translate-y-1"
+                >
+                  Lihat Paket Langganan
+                  <span className="material-icons group-hover:translate-y-1 transition-transform text-xl">
+                    arrow_downward
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            {/* Kolom Kanan: Gambar Visual Utama */}
+            <div className="w-full lg:w-1/2 flex justify-center items-center order-2 lg:order-2 relative">
+              {/* Blob dekoratif di belakang gambar */}
+              <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full blur-3xl opacity-70 transform scale-110 pointer-events-none"></div>
+
+              <div className="relative z-10 w-full max-w-lg lg:max-w-none transform lg:scale-105 xl:scale-110">
+                <img
+                  src="/images/features/ProductFeatures.webp"
+                  alt="Visual Fitur Produk IoTernak Modern"
+                  className="w-full h-auto rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.1)] border border-gray-100 object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Products Grid Section */}
-      <div className="relative pt-28 pb-20 overflow-hidden bg-white dark:bg-gray-900">
-        <div className="absolute inset-0 z-0 pointer-events-none">
-          <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern-light dark:bg-grid-pattern-dark bg-[size:40px_40px] opacity-[0.15]"></div>
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]"></div>
-          <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]"></div>
-        </div>
-        <div className="container mx-auto px-6 relative z-10 text-center max-w-5xl"></div>
-        <div
-          className="container mx-auto px-6 max-w-6xl space-y-24"
-          id="products"
-        >
+      {/* Products Section - Clean White SaaS Layout */}
+      <div
+        className="relative pt-24 pb-32 bg-gray-50 overflow-hidden"
+        id="products"
+      >
+        {/* Abstract Background Elements (Soft Green) */}
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-green-200 to-transparent"></div>
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-green-100 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-20 -left-40 w-[500px] h-[500px] bg-green-50 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div className="container mx-auto px-6 max-w-6xl relative z-10 space-y-32">
           {/* ioPakan */}
-          <div className="mb-24">
-            <div className="bg-white dark:bg-gray-800 rounded-3xl p-4 sm:p-8 md:p-12 shadow-2xl border border-gray-100 dark:border-gray-700 flex flex-col lg:flex-row items-center gap-8 md:gap-12 relative overflow-hidden group">
-              <div className="absolute top-1/2 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl transform -translate-y-1/2 group-hover:bg-secondary/30 transition-colors duration-500"></div>
-              <div className="lg:w-1/2 relative z-10 flex justify-center order-1 lg:order-2">
-                <div className="relative w-full aspect-square max-w-xs lg:max-w-md bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 rounded-3xl flex items-center justify-center p-6 md:p-8 shadow-inner">
+          <div className="relative group">
+            <div className="absolute -inset-2 bg-gradient-to-r from-green-200 to-emerald-100 rounded-[2.5rem] blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
+            <div className="relative bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center shadow-xl shadow-green-900/5">
+              {/* Image Section */}
+              <div className="lg:col-span-5 flex justify-center relative">
+                <div className="relative w-full aspect-square max-w-md bg-green-50 rounded-3xl p-6 flex items-center justify-center overflow-hidden border border-green-100">
+                  <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10"></div>
                   <img
-                    alt="Smart Pakan"
-                    className="object-cover w-full h-full mix-blend-multiply dark:mix-blend-normal opacity-90 group-hover:scale-105 transition-transform duration-500"
-                    src="/images/product/ioPakan-1-1.webp"
+                    alt="Mesin ioPakan"
+                    className="object-cover w-full h-full relative z-10 group-hover:scale-105 transition-transform duration-700 ease-out mix-blend-multiply"
+                    src="/images/product/IoPakan/IoPakanNew.webp"
                   />
-                  <div
-                    className="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 p-3 sm:p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 flex items-center gap-2 sm:gap-3 animate-bounce text-xs sm:text-base"
-                    style={{ animationDuration: "3s" }}
-                  >
-                    <div className="w-8 sm:w-10 h-8 sm:h-10 rounded-full bg-green-500 flex items-center justify-center text-white flex-shrink-0">
-                      <span className="material-icons text-xs sm:text-sm">
-                        check
-                      </span>
+                  {/* Floating Badge - Bahasa Indonesia */}
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md border border-green-200 text-green-700 px-2.5 py-1.5 rounded-full text-xs font-bold z-20 flex items-center gap-1 shadow-sm">
+                    <span
+                      className="material-icons text-green-600"
+                      style={{ fontSize: "16px" }}
+                    >
+                      autorenew
+                    </span>{" "}
+                    <span className="hidden sm:inline">Pakan Otomatis</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Section */}
+              <div className="lg:col-span-7 flex flex-col justify-center">
+                <div className="inline-block px-4 py-1.5 rounded-full bg-green-100 text-green-700 text-sm font-bold w-max mb-4">
+                  Sistem Distribusi Pakan
+                </div>
+                <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                  ioPakan
+                </h2>
+                <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+                  Bagikan pakan secara tepat dan merata ke seluruh penjuru
+                  kandang. Atur jadwal dan takaran langsung dari HP Anda, tidak
+                  perlu lagi repot menakar manual.
+                </p>
+
+                {/* Grid Features */}
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-start gap-3">
+                    <div className="p-2.5 rounded-xl bg-green-50 text-green-600">
+                      <span className="material-icons">schedule</span>
                     </div>
                     <div>
-                      <p className="font-bold text-gray-900 dark:text-white">
-                        Feeding Automation
+                      <h4 className="text-gray-900 font-bold text-sm">
+                        Jadwal Tepat Waktu
+                      </h4>
+                      <p className="text-gray-500 text-xs mt-0.5">
+                        Ayam makan teratur
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="p-2.5 rounded-xl bg-green-50 text-green-600">
+                      <span className="material-icons">analytics</span>
+                    </div>
+                    <div>
+                      <h4 className="text-gray-900 font-bold text-sm">
+                        Catatan Harian
+                      </h4>
+                      <p className="text-gray-500 text-xs mt-0.5">
+                        Pantau jumlah pakan habis
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="lg:w-1/2 z-10 order-2 lg:order-1">
-                <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                  ioPakan
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-lg leading-relaxed">
-                  Sistem pakan otomatis berbasis IoT yang dirancang untuk
-                  menyalurkan pakan secara presisi dan konsisten dalam skala
-                  peternakan. ioPakan membantu mengoptimalkan pertumbuhan ayam,
-                  mengurangi pemborosan pakan, dan meningkatkan efisiensi
-                  operasional.
-                </p>
-                <div className="grid grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 md:w-10 h-8 md:h-10 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-icons text-xs md:text-sm">
-                        schedule
+
+                <div className="h-px w-full bg-gray-100 mb-8"></div>
+
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 bg-green-50/80 p-6 rounded-2xl border border-green-200">
+                  <div>
+                    <p className="text-gray-600 text-sm mb-1 font-semibold">
+                      Berlangganan mulai dari
+                    </p>
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-4xl md:text-5xl font-extrabold text-green-700">
+                        Rp 200rb
                       </span>
+                      <span className="text-gray-500 font-medium">/ bulan</span>
                     </div>
-                    <span className="font-medium text-gray-700 dark:text-gray-200 text-xs md:text-base">
-                      Automated Feeding
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 md:w-10 h-8 md:h-10 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-icons text-xs md:text-sm">
-                        smartphone
-                      </span>
-                    </div>
-                    <span className="font-medium text-gray-700 dark:text-gray-200 text-xs md:text-base">
-                      App-Based Control
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 md:w-10 h-8 md:h-10 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-icons text-xs md:text-sm">
-                        analytics
-                      </span>
-                    </div>
-                    <span className="font-medium text-gray-700 dark:text-gray-200 text-xs md:text-base">
-                      Smart Monitoring
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 md:w-10 h-8 md:h-10 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-icons text-xs md:text-sm">
-                        storage
-                      </span>
-                    </div>
-                    <span className="font-medium text-gray-700 dark:text-gray-200 text-xs md:text-base">
-                      Large Feed Capacity
-                    </span>
-                  </div>
-                </div>
-                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-                  <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
-                    Rp 3.000.000
+                    <ul className="mt-3 space-y-2">
+                      <li className="text-sm text-gray-700 flex items-center gap-2 font-medium">
+                        <span className="material-icons text-green-500 text-base">
+                          check_circle
+                        </span>{" "}
+                        Garansi alat seumur hidup
+                      </li>
+                      <li className="text-sm text-gray-700 flex items-center gap-2 font-medium">
+                        <span className="material-icons text-green-500 text-base">
+                          check_circle
+                        </span>{" "}
+                        Gratis servis dan perawatan rutin
+                      </li>
+                    </ul>
                   </div>
                   <a
                     href="/products/iopakan"
-                    className="bg-primary hover:bg-green-700 text-white px-6 py-2 md:px-8 md:py-3 rounded-xl font-bold shadow-lg shadow-primary/30 transition-all flex items-center gap-2 text-sm md:text-base"
+                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2 whitespace-nowrap shadow-md shadow-green-600/20 hover:-translate-y-0.5"
                   >
-                    Learn More
+                    Daftar Sekarang{" "}
                     <span className="material-icons text-sm">
                       arrow_forward
                     </span>
@@ -162,129 +187,150 @@ export default function Products() {
           </div>
 
           {/* ioPeka */}
-          <div className="mb-24">
-            <div className="bg-white dark:bg-gray-800 rounded-3xl p-4 sm:p-8 md:p-12 shadow-2xl border border-gray-100 dark:border-gray-700 flex flex-col lg:flex-row items-center gap-8 md:gap-12 relative overflow-hidden group">
-              <div className="absolute top-1/2 -right-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl transform -translate-y-1/2 group-hover:bg-primary/30 transition-colors duration-500"></div>
-              <div className="lg:w-1/2 relative z-10 flex justify-center order-1 lg:order-2">
-                <div className="relative w-full aspect-square max-w-xs lg:max-w-md bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 rounded-3xl flex items-center justify-center p-6 md:p-8 shadow-inner">
-                  <img
-                    alt="Smart Detector"
-                    className="object-cover w-full h-full mix-blend-multiply dark:mix-blend-normal opacity-90 group-hover:scale-105 transition-transform duration-500"
-                    src="/images/product/ioPeka-1-1.webp"
-                  />
-                  <div
-                    className="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 p-3 sm:p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 flex items-center gap-2 sm:gap-3 animate-bounce text-xs sm:text-base"
-                    style={{ animationDuration: "3s" }}
-                  >
-                    <div className="w-8 sm:w-10 h-8 sm:h-10 rounded-full bg-green-500 flex items-center justify-center text-white flex-shrink-0">
-                      <span className="material-icons text-xs sm:text-sm">
-                        sensors
-                      </span>
+          <div className="relative group">
+            <div className="absolute -inset-2 bg-gradient-to-r from-emerald-100 to-green-200 rounded-[2.5rem] blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
+            <div className="relative bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center shadow-xl shadow-green-900/5">
+              {/* Content Section (Swapped order) */}
+              <div className="lg:col-span-7 flex flex-col justify-center order-2 lg:order-1">
+                <div className="inline-block px-4 py-1.5 rounded-full bg-green-100 text-green-700 text-sm font-bold w-max mb-4">
+                  Pemantau Lingkungan
+                </div>
+                <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                  ioPeka
+                </h2>
+                <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+                  Ketahui kondisi udara kandang sebelum ayam jatuh sakit. Sensor
+                  ioPeka memantau suhu, kelembapan, dan gas berbahaya 24 jam
+                  nonstop.
+                </p>
+
+                {/* Grid Features */}
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-start gap-3">
+                    <div className="p-2.5 rounded-xl bg-green-50 text-green-600">
+                      <span className="material-icons">thermostat</span>
                     </div>
                     <div>
-                      <p className="font-bold text-gray-900 dark:text-white">
-                        Smart Monitoring
+                      <h4 className="text-gray-900 font-bold text-sm">
+                        Suhu & Kelembapan
+                      </h4>
+                      <p className="text-gray-500 text-xs mt-0.5">
+                        Jaga ayam tetap nyaman
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="p-2.5 rounded-xl bg-green-50 text-green-600">
+                      <span className="material-icons">air</span>
+                    </div>
+                    <div>
+                      <h4 className="text-gray-900 font-bold text-sm">
+                        Deteksi Gas
+                      </h4>
+                      <p className="text-gray-500 text-xs mt-0.5">
+                        Pantau kadar Amonia & Metana
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="lg:w-1/2 z-10 order-2 lg:order-1">
-                <h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                  ioPeka
-                </h2>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-lg leading-relaxed">
-                  Perangkat sensor cerdas untuk memantau suhu, kelembapan, serta
-                  gas amonia dan metana di dalam kandang secara real-time.
-                  ioPeka membantu peternak mendeteksi kondisi lingkungan yang
-                  berisiko sejak dini, menjaga kenyamanan ternak, dan mencegah
-                  penurunan performa akibat stres lingkungan.
-                </p>
-                <div className="grid grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 md:w-10 h-8 md:h-10 rounded-lg bg-green-100 dark:bg-blue-900/30 flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-icons text-xs md:text-sm">
-                        thermostat
+
+                <div className="h-px w-full bg-gray-100 mb-8"></div>
+
+                {/* HaaS Pricing Block */}
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 bg-green-50/80 p-6 rounded-2xl border border-green-200">
+                  <div>
+                    <p className="text-gray-600 text-sm mb-1 font-semibold">
+                      Berlangganan mulai dari
+                    </p>
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-4xl md:text-5xl font-extrabold text-green-700">
+                        Rp 150rb
                       </span>
+                      <span className="text-gray-500 font-medium">/ bulan</span>
                     </div>
-                    <span className="font-medium text-gray-700 dark:text-gray-200 text-xs md:text-base">
-                      Temperature Monitoring
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 md:w-10 h-8 md:h-10 rounded-lg bg-green-100 dark:bg-blue-900/30 flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-icons text-xs md:text-sm">
-                        opacity
-                      </span>
-                    </div>
-                    <span className="font-medium text-gray-700 dark:text-gray-200 text-xs md:text-base">
-                      Humidity Tracking
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 md:w-10 h-8 md:h-10 rounded-lg bg-green-100 dark:bg-blue-900/30 flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-icons text-xs md:text-sm">
-                        air
-                      </span>
-                    </div>
-                    <span className="font-medium text-gray-700 dark:text-gray-200 text-xs md:text-base">
-                      Gas Detection
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 md:gap-3">
-                    <div className="w-8 md:w-10 h-8 md:h-10 rounded-lg bg-green-100 dark:bg-blue-900/30 flex items-center justify-center text-primary flex-shrink-0">
-                      <span className="material-icons text-xs md:text-sm">
-                        notifications_active
-                      </span>
-                    </div>
-                    <span className="font-medium text-gray-700 dark:text-gray-200 text-xs md:text-base">
-                      Alert System
-                    </span>
-                  </div>
-                </div>
-                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-                  <div className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
-                    Rp 4.200.000
+                    <ul className="mt-3 space-y-2">
+                      <li className="text-sm text-gray-700 flex items-center gap-2 font-medium">
+                        <span className="material-icons text-green-500 text-base">
+                          check_circle
+                        </span>{" "}
+                        Penggantian sensor jika rusak
+                      </li>
+                      <li className="text-sm text-gray-700 flex items-center gap-2 font-medium">
+                        <span className="material-icons text-green-500 text-base">
+                          check_circle
+                        </span>{" "}
+                        Pembaruan aplikasi gratis
+                      </li>
+                    </ul>
                   </div>
                   <a
                     href="/products/iopeka"
-                    className="bg-primary hover:bg-green-700 text-white px-6 py-2 md:px-8 md:py-3 rounded-xl font-bold shadow-lg shadow-blue-600/30 transition-all flex items-center gap-2 text-sm md:text-base"
+                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2 whitespace-nowrap shadow-md shadow-green-600/20 hover:-translate-y-0.5"
                   >
-                    Learn More
+                    Daftar Sekarang{" "}
                     <span className="material-icons text-sm">
                       arrow_forward
                     </span>
                   </a>
                 </div>
               </div>
+
+              {/* Image Section */}
+              <div className="lg:col-span-5 flex justify-center relative order-1 lg:order-2">
+                <div className="relative w-full aspect-square max-w-md bg-green-50 rounded-3xl p-6 flex items-center justify-center overflow-hidden border border-green-100">
+                  <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10"></div>
+                  <img
+                    alt="Sensor ioPeka"
+                    className="object-cover w-full h-full relative z-10 group-hover:scale-105 transition-transform duration-700 ease-out mix-blend-multiply"
+                    src="/images/product/ioPeka-1-1.webp"
+                  />
+                  {/* Floating Alert Badge */}
+                  <div
+                    className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md border border-orange-200 text-orange-600 px-2.5 py-1.5 rounded-full text-xs font-bold z-20 flex items-center gap-1 shadow-sm animate-bounce"
+                    style={{ animationDuration: "3s" }}
+                  >
+                    <span
+                      className="material-icons"
+                      style={{ fontSize: "16px" }}
+                    >
+                      notifications_active
+                    </span>{" "}
+                    <span className="hidden sm:inline">
+                      Notifikasi ke HP Anda
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          {/* CTA Section */}
-          <div className="mt-20 md:mt-24 relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-r from-primary to-secondary p-6 sm:p-8 md:p-12 text-center md:text-left shadow-2xl">
-            <div className="absolute top-0 right-0 w-48 sm:w-64 h-48 sm:h-64 bg-white opacity-10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
-            <div className="absolute bottom-0 left-0 w-32 sm:w-48 h-32 sm:h-48 bg-black opacity-10 rounded-full -ml-12 -mb-12 blur-2xl"></div>
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
-              <div className="max-w-xl text-white">
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4">
-                  Mulai Peternakan Ayam yang Lebih Cerdas Hari Ini
-                </h2>
-                <p className="text-white/90 text-sm sm:text-base md:text-lg leading-relaxed">
-                  Bergabunglah dengan peternak yang telah menggunakan ekosistem
-                  IoTernak untuk meningkatkan efisiensi kerja dan operasional
-                  ternak.
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-full md:w-auto">
-                <a
-                  href="https://wa.me/6281234567890"
-                  className="bg-white text-primary hover:bg-gray-50 font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-lg md:rounded-xl shadow-lg transition-transform hover:scale-105 inline-flex items-center justify-center gap-2 w-full md:w-auto"
-                >
-                  Request Demo
-                  <span className="material-icons text-base sm:text-lg">
-                    rocket_launch
-                  </span>
-                </a>
-              </div>
+
+          {/* CTA Section - Agritech Fresh Vibe */}
+          <div className="relative overflow-hidden rounded-2xl sm:rounded-[2.5rem] bg-green-600 p-6 sm:p-8 md:p-16 text-center shadow-2xl shadow-green-700/20 group">
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/10 rounded-full -mr-48 -mt-48 blur-[80px]"></div>
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-400/20 rounded-full -ml-48 -mb-48 blur-[80px]"></div>
+
+            <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+              <span className="px-4 py-1.5 rounded-full bg-white/20 border border-white/30 text-white text-xs sm:text-sm font-bold mb-4 sm:mb-6 backdrop-blur-sm">
+                Gabung Bersama Peternak Sukses Lainnya
+              </span>
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 sm:mb-6 leading-tight">
+                Tinggalkan Cara Lama,
+                <br />
+                Mulai Ternak Lebih Pintar Hari Ini
+              </h2>
+              <p className="text-green-50 text-sm sm:text-base md:text-lg mb-6 sm:mb-10 max-w-2xl px-2 sm:px-0">
+                Cukup bayar langganan bulanan, tim IoTernak akan memasang alat
+                di kandang Anda dan memastikannya berjalan normal setiap hari.
+              </p>
+              <a
+                href="https://wa.me/6281234567890"
+                className="bg-white text-green-700 hover:bg-gray-50 hover:scale-105 transition-all duration-300 font-extrabold py-3 sm:py-4 px-6 sm:px-8 rounded-xl shadow-lg flex items-center gap-2 sm:gap-3 text-sm sm:text-base md:text-lg"
+              >
+                Tanya Jawab di WhatsApp Gratis
+                <span className="material-icons text-lg sm:text-xl">
+                  support_agent
+                </span>
+              </a>
             </div>
           </div>
         </div>

@@ -15,11 +15,9 @@ export default function Home() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 text-center flex-grow">
           <div className="flex flex-col items-center max-w-5xl mx-auto mt-18">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-white mb-6">
-              Merevolusi Operasional
-              <br className="hidden md:block" />
-              Peternakan Anda dengan <br className="hidden md:block" />
+              Kendali Kandang dalam <br></br>
               <span className="bg-gradient-to-r from-green-400 via-green-500 to-emerald-500 bg-clip-text text-transparent">
-                Teknologi IoTernak
+                Genggaman IoTernak
               </span>
             </h1>
             <p className="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -210,7 +208,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="flex justify-center">
                 <img
-                  src="images/product/ioPakan.webp"
+                  src="images/product/IoPakan/IoPakanNew.webp"
                   alt="ioPakan"
                   className="w-full max-w-lg h-auto"
                 />
