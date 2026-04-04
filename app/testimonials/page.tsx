@@ -156,7 +156,7 @@ export default function Testimonials() {
             <div className="mt-4 md:mt-12 relative group">
               <div className="absolute -inset-1 bg-green-200 rounded-3xl blur opacity-0 group-hover:opacity-60 transition duration-500"></div>
               <img
-                src="/images/Feedback/testimoni-pakYanto.png"
+                src="/images/Feedback/testimoni-pakyanto.png"
                 alt="Testimoni Chat 4"
                 className="relative rounded-2xl w-full h-auto shadow-[0_10px_40px_rgba(0,0,0,0.08)] border-4 border-white object-cover"
               />
