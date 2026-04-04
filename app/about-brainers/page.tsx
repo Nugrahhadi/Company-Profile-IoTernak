@@ -36,7 +36,7 @@ export default function AboutBrainers({
       description:
         "Seorang strategist kreatif yang mendorong visi brand dan kehadiran pasar IoTernak. Lula mengembangkan kampanye marketing yang menarik dan konten kreatif yang terhubung dengan peternak dan pemangku kepentingan, memastikan pesan kami beresonansi di semua saluran.",
       specialty: "Strategi Brand & Digital Marketing",
-      image: "images/Lula_Casual.webp",
+      image: "/images/Lula_Casual.webp",
       icon: "campaign",
       linkedin: "https://linkedin.com/",
     },
