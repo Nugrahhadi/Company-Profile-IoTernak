@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "IoTernak - Ecosystem",
@@ -25,8 +26,7 @@ export const metadata: Metadata = {
   manifest: "/images/favicon_ioternak/manifest.webmanifest",
   openGraph: {
     title: "IoTernak - Ecosystem",
-    description:
-      "Revolutionizing livestock operations with smart IoT technology",
+    description: "Revolutionizing livestock operations with smart IoT technology",
     images: [
       {
         url: "/images/favicon_ioternak/android-chrome-512x512.png",
@@ -63,36 +63,12 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              tailwind.config = {
-                darkMode: "class",
-                theme: {
-                  extend: {
-                    colors: {
-                      primary: "#009312",
-                      secondary: "#02B919",
-                      "background-light": "#ffffff",
-                      "background-dark": "#0f172a",
-                      "surface-light": "#f8fafc",
-                      "surface-dark": "#1e293b",
-                    },
-                    fontFamily: {
-                      display: ["Inter", "sans-serif"],
-                      body: ["Inter", "sans-serif"],
-                    },
-                  },
-                },
-              };
-            `,
-          }}
-        />
       </head>
       <body className="bg-white dark:bg-background-dark text-gray-900 dark:text-white transition-colors duration-300 flex flex-col min-h-screen font-sans">
         <Navbar />
         <main className="grow">{children}</main>
         <Footer />
+        <GoogleAnalytics gaId="G-020VBT6T3X" />
       </body>
     </html>
   );
