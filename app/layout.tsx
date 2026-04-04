@@ -26,7 +26,8 @@ export const metadata: Metadata = {
   manifest: "/images/favicon_ioternak/manifest.webmanifest",
   openGraph: {
     title: "IoTernak - Ecosystem",
-    description: "Revolutionizing livestock operations with smart IoT technology",
+    description:
+      "Revolutionizing livestock operations with smart IoT technology",
     images: [
       {
         url: "/images/favicon_ioternak/android-chrome-512x512.png",
@@ -38,6 +39,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     images: ["/images/favicon_ioternak/android-chrome-192x192.png"],
+  },
+  verification: {
+    google: "6c5YszP4IuUxyd5Ck7-Qj7yhrvvarBfblzX48dtb3wQ",
   },
 };
 
