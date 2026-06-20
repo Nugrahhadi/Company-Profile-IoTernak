@@ -24,12 +24,12 @@ jobs:
       - name: Build Next.js App
         run: npm run build
 
-      - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Deploy to Hostinger via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/ 
-          server-dir: ./
-          timeout: 60000 
+          host: ${{ secrets.FTP_SERVER }}
+          port: 65002
+          localDir: 'out' 
+          remoteDir: '/home/u424643544/domains/ioternak.id/public_html' 
