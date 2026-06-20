@@ -11,6 +11,14 @@ export default function AboutBrainers({
 }: AboutBrainersProps) {
   const team = [
     {
+      name: "Ir. Mohammad Irham Akbar S.Kom.,M.Cs",
+      role: "Commissioner",
+      description: "Memberikan pengawasan eksekutif dan pandangan ahli (expert insight) terhadap arah pengembangan IoTernak. Dengan latar belakang keilmuan yang komprehensif di bidang teknologi informasi dan ilmu komputer, beliau memastikan bahwa setiap inovasi IoT yang dirancang perusahaan memiliki landasan arsitektur yang solid, tervalidasi secara teknis, serta memenuhi standar tata kelola perusahaan yang baik.",
+      specialty: "Tech Governance & Strategic Advisory",
+      image: "/images/Pak-Irham.jpg",
+      icon: "insights",
+    },
+    {
       name: "Nugrahhadi Al Khawarizmi",
       role: "Founder & Chief Executive Officer",
       description:
@@ -52,7 +60,7 @@ export default function AboutBrainers({
     },
     {
       name: "Farhan Ibnu Majid",
-      role: "Hardware Developer",
+      role: "Chief Engineering Officer",
       description:
         "Seorang engineer hardware terampil yang merancang dan mengembangkan perangkat IoT untuk jaringan sensor IoTernak. Farhan membawa inovasi dalam sistem tertanam dan hardware IoT untuk menciptakan perangkat yang andal dan efisien untuk monitoring pertanian.",
       specialty: "Hardware IoT & Embedded Systems",
@@ -60,16 +68,7 @@ export default function AboutBrainers({
       icon: "build",
       linkedin: "https://linkedin.com/",
     },
-    // {
-    //   name: "Budi Hartono",
-    //   role: "Chief Operations Officer",
-    //   description:
-    //     "Budi manages on-ground operations, ensuring seamless integration of our tech with farms. His hands-on experience in livestock management is invaluable to our product relevance.",
-    //   specialty: "Operations & Logistics",
-    //   image:
-    //     "https://lh3.googleusercontent.com/aida-public/AB6AXuA3luu39gN_HA1C7zkiT-p0gRAP0DOXjKVHyJqcWr0pXxTrvbhJ7RBFCFuvo113-KRcuCoE2CVrIjIqc05_d69SlXS4xjXbelK92y0ukZkgI9GHMpmyoEcTPPDZrex1N_XTR4PsgfJq2zhfr2ldaYwWjjT-2-ke-XTuzldQLxj6yBgB4-lPNo0iNVkwJeP8AYsbR5r3sq32s7yEOYwdEhJnRiSlW14XVXLvLR3ERigb_Ir7tymbRlxPAoxFH8S50iILbgZPhJ8qdxY",
-    //   icon: "agriculture",
-    // },
+
   ];
 
   return (
@@ -167,7 +166,7 @@ export default function AboutBrainers({
               <img
                 alt="Team collaborating on tech project"
                 className={`rounded-2xl shadow-2xl relative z-10 ${imageClassName}`}
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuARYwJtNbD71vuPXaKYm9lxQm32eUT0-LSLCL-HoCdVKzg9sofVXBfNIWz2c2vf7F7QelHWz94FJ8IXJtdAXybH65OG9UbDiIjXrI1KytLTeP1Sh3OlJySW6Imk2gAn9oFKQ7CblnOm_G7I4_etFCpeQ1svb0QhpoWb7Xpk1HxBvS4b2mTyaw7ni9iTIn4uiKczosMv214-4GkfFxp0KyEvupm2lXfoEBl8L_ccuWBQHxU9rcGSysXndxeoWBSoQGHn3ayoBFPPLVU"
+                src="/images/the-brainers.webp"
                 width={imageWidth}
                 height={imageHeight}
               />
@@ -212,17 +211,6 @@ export default function AboutBrainers({
                     </p>
                   </div>
                 </div>
-              </div>
-              <div className="mt-10">
-                <a
-                  className="inline-flex items-center text-primary hover:text-secondary font-semibold group transition-colors"
-                  href="#"
-                >
-                  Join our journey
-                  <span className="material-icons ml-2 group-hover:translate-x-1 transition-transform">
-                    arrow_forward
-                  </span>
-                </a>
               </div>
             </div>
           </div>

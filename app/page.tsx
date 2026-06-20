@@ -1,3 +1,5 @@
+import SupportedLogos from "@/components/SupportedLogos";
+
 export default function Home() {
   return (
     <>
@@ -49,295 +51,268 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Supported Logos Section */}
+      <SupportedLogos />
+
+      {/* Products Section */}
       {/* Products Section */}
       <section
-        className="py-24 bg-gray-50 dark:bg-gray-900 relative"
+        className="py-28 bg-gradient-to-b from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-slate-900 dark:to-gray-950 relative overflow-hidden"
         id="products"
       >
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-primary font-semibold tracking-wide uppercase text-sm mb-3">
+        {/* Background Grid Pattern */}
+        <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] bg-[radial-gradient(#009312_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
+
+        <div className="container mx-auto px-6 max-w-6xl relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-20">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 dark:bg-primary/20 text-primary dark:text-green-400 font-semibold tracking-wide uppercase text-xs mb-4">
               Ekosistem IoTernak
-            </h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Solusi Cerdas Peternakan Ayam Modern
+            </span>
+            <h3 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight">
+              Solusi Cerdas Peternakan Modern
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Rangkaian solusi terintegrasi untuk membantu peternak memantau,
-              mengelola, dan mengoptimalkan setiap aspek operasional peternakan
-              ayam.
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed">
+              Rangkaian teknologi terintegrasi untuk membantu peternak memantau,
+              mengelola, dan mengoptimalkan setiap aspek operasional secara real-time.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+          {/* Three Core Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 mb-32">
             {/* Hardware */}
-            <div className="group relative bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-              <div className="w-full aspect-[4/3] bg-gray-50 dark:bg-gray-900 rounded-2xl mb-6 overflow-hidden flex items-center justify-center relative">
-                <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="group relative bg-white/70 dark:bg-slate-800/50 backdrop-blur-md rounded-3xl p-6 shadow-sm border border-gray-200/50 dark:border-slate-700/50 hover:shadow-2xl hover:border-primary/30 dark:hover:border-primary/30 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
+              <div className="w-full aspect-[4/3] bg-gray-100 dark:bg-slate-900 rounded-2xl mb-6 overflow-hidden relative">
+                <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 <img
                   alt="Smart Livestock Collar Device"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
                   src="images/features/hardware.webp"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur px-3 py-1 rounded-full text-xs font-semibold text-primary border border-primary/20">
+                <div className="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur px-3 py-1 rounded-full text-xs font-semibold text-primary border border-primary/20 shadow-sm z-20">
                   Hardware
                 </div>
               </div>
-              <div className="flex-grow">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg text-primary">
-                    <span className="material-icons">watch</span>
+              <div className="flex-grow flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2.5 bg-green-50 dark:bg-green-950/50 rounded-xl text-primary border border-green-100 dark:border-green-900/30">
+                      <span className="material-icons text-xl block">watch</span>
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+                      Perangkat IoTernak
+                    </h4>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white">
-                    Perangkat IoTernak
-                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                    Perangkat IoT untuk kemudahan operasional dan efektivitas
+                    ternak secara real-time.
+                  </p>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
-                  Perangkat IoT untuk kemudahan operasional dan efektivitas
-                  ternak secara real-time.
-                </p>
               </div>
             </div>
 
             {/* Software */}
-            <div className="group relative bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-              <div className="w-full aspect-[4/3] bg-gray-50 dark:bg-gray-900 rounded-2xl mb-6 overflow-hidden flex items-center justify-center relative">
-                <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="group relative bg-white/70 dark:bg-slate-800/50 backdrop-blur-md rounded-3xl p-6 shadow-sm border border-gray-200/50 dark:border-slate-700/50 hover:shadow-2xl hover:border-blue-500/30 dark:hover:border-blue-500/30 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
+              <div className="w-full aspect-[4/3] bg-gray-100 dark:bg-slate-900 rounded-2xl mb-6 overflow-hidden relative">
+                <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 <img
                   alt="Farm Management Dashboard Interface"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
                   src="images/features/software.webp"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur px-3 py-1 rounded-full text-xs font-semibold text-secondary border border-secondary/20">
+                <div className="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur px-3 py-1 rounded-full text-xs font-semibold text-blue-600 border border-blue-200 dark:border-blue-800/30 shadow-sm z-20">
                   Software
                 </div>
               </div>
-              <div className="flex-grow">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg text-blue-600 dark:text-blue-400">
-                    <span className="material-icons">analytics</span>
+              <div className="flex-grow flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2.5 bg-blue-50 dark:bg-blue-950/50 rounded-xl text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900/30">
+                      <span className="material-icons text-xl block">analytics</span>
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+                      Aplikasi IoTernak
+                    </h4>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white">
-                    Aplikasi IoTernak
-                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                    Pusat kendali seluruh perangkat IoTernak untuk membantu
+                    pengelolaan data kandang dengan mudah.
+                  </p>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
-                  Pusat kendali seluruh perangkat IoTernak untuk membantu
-                  pengelolaan data kandang dengan mudah.
-                </p>
               </div>
             </div>
 
             {/* Automation */}
-            <div className="group relative bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-              <div className="w-full aspect-[4/3] bg-gray-50 dark:bg-gray-900 rounded-2xl mb-6 overflow-hidden flex items-center justify-center relative">
-                <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="group relative bg-white/70 dark:bg-slate-800/50 backdrop-blur-md rounded-3xl p-6 shadow-sm border border-gray-200/50 dark:border-slate-700/50 hover:shadow-2xl hover:border-orange-500/30 dark:hover:border-orange-500/30 hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
+              <div className="w-full aspect-[4/3] bg-gray-100 dark:bg-slate-900 rounded-2xl mb-6 overflow-hidden relative">
+                <div className="absolute inset-0 bg-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 <img
                   alt="Smart Automated Feeding System"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
                   src="images/features/automation.webp"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur px-3 py-1 rounded-full text-xs font-semibold text-orange-600 dark:text-orange-400 border border-orange-200 dark:border-orange-800">
+                <div className="absolute top-4 right-4 bg-white/95 dark:bg-slate-900/95 backdrop-blur px-3 py-1 rounded-full text-xs font-semibold text-orange-600 border border-orange-200 dark:border-orange-800/30 shadow-sm z-20">
                   Automation
                 </div>
               </div>
-              <div className="flex-grow">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg text-orange-600 dark:text-orange-400">
-                    <span className="material-icons">
-                      precision_manufacturing
-                    </span>
+              <div className="flex-grow flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-2.5 bg-orange-50 dark:bg-orange-950/50 rounded-xl text-orange-600 dark:text-orange-400 border border-orange-100 dark:border-orange-900/30">
+                      <span className="material-icons text-xl block">precision_manufacturing</span>
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+                      Ekosistem Otomasi
+                    </h4>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-900 dark:text-white">
-                    Ekosistem Otomasi
-                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                    Ekosistem otomasi IoT untuk menciptakan operasional peternakan
+                    yang lebih cerdas dan adaptif.
+                  </p>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
-                  Ekosistem otomasi IoT untuk menciptakan operasional peternakan
-                  yang lebih cerdas dan adaptif.
-                </p>
               </div>
             </div>
           </div>
 
-          {/* App & Products Feature Section */}
-          <div className="mt-32 space-y-24">
+          {/* App & Products Showcase Detail */}
+          <div className="space-y-36">
             {/* App Introduction */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="order-2 md:order-1 flex flex-col">
-                <h3 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div className="lg:col-span-5 order-2 lg:order-1 flex flex-col">
+                <span className="text-primary dark:text-green-400 font-bold tracking-widest text-xs uppercase mb-2 block">
+                  Pusat Kendali Utama
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight">
                   IoTernak App
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm md:text-base leading-relaxed">
-                  Aplikasi pusat untuk mengelola seluruh ekosistem IoTernak
-                  Anda. Pantau semua perangkat, analisis data real-time, dan
-                  ambil keputusan bisnis yang lebih baik dengan dashboard yang
-                  intuitif dan mudah digunakan.
+                <p className="text-gray-600 dark:text-gray-300 mb-8 text-base leading-relaxed font-light">
+                  Aplikasi pusat untuk mengelola seluruh ekosistem IoTernak Anda. Pantau semua perangkat, analisis data real-time, dan ambil keputusan bisnis yang lebih tepat dengan dashboard yang intuitif dan mudah dipahami.
                 </p>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300 text-sm md:text-base">
-                    <span className="material-icons text-primary text-xl flex-shrink-0">
-                      check_circle
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center gap-3.5 text-gray-700 dark:text-gray-300 text-sm md:text-base font-medium">
+                    <span className="material-icons text-primary bg-primary/10 p-1 rounded-full text-base flex-shrink-0">
+                      check
                     </span>
-                    Dashboard analitik real-time
+                    Dashboard analitik real-time & interaktif
                   </li>
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300 text-sm md:text-base">
-                    <span className="material-icons text-primary text-xl flex-shrink-0">
-                      check_circle
+                  <li className="flex items-center gap-3.5 text-gray-700 dark:text-gray-300 text-sm md:text-base font-medium">
+                    <span className="material-icons text-primary bg-primary/10 p-1 rounded-full text-base flex-shrink-0">
+                      check
                     </span>
-                    Kontrol perangkat dari mana saja
+                    Kontrol perangkat pintar dari mana saja
                   </li>
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300 text-sm md:text-base">
-                    <span className="material-icons text-primary text-xl flex-shrink-0">
-                      check_circle
+                  <li className="flex items-center gap-3.5 text-gray-700 dark:text-gray-300 text-sm md:text-base font-medium">
+                    <span className="material-icons text-primary bg-primary/10 p-1 rounded-full text-base flex-shrink-0">
+                      check
                     </span>
-                    Laporan otomatis dan insights
+                    Laporan otomatis bulanan dan insights prediktif
                   </li>
                 </ul>
               </div>
-              <div className="order-1 md:order-2 flex justify-center">
+              <div className="lg:col-span-7 order-1 lg:order-2 flex justify-center relative group">
+                {/* Glow Background */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-3xl filter blur-3xl opacity-70 scale-95 pointer-events-none group-hover:scale-105 transition-all duration-700" />
                 <img
                   src="images/features/3d-app.webp"
-                  alt="Maggenzim App"
-                  className="w-full max-w-lg"
+                  alt="IoTernak App Interface"
+                  className="w-full max-w-lg relative z-10 drop-shadow-[0_20px_50px_rgba(0,147,18,0.15)] hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>
 
             {/* Product 1: ioPakan */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="flex justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div className="lg:col-span-7 flex justify-center relative group">
+                <div className="absolute inset-0 bg-gradient-to-tr from-secondary/10 to-transparent rounded-3xl filter blur-3xl opacity-70 scale-95 pointer-events-none group-hover:scale-105 transition-all duration-700" />
                 <img
                   src="images/product/IoPakan/IoPakanNew.webp"
-                  alt="ioPakan"
-                  className="w-full max-w-lg h-auto"
+                  alt="ioPakan Device"
+                  className="w-full max-w-lg h-auto relative z-10 drop-shadow-[0_20px_50px_rgba(2,185,19,0.12)] hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
-              <div>
-                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              <div className="lg:col-span-5">
+                <span className="text-primary dark:text-green-400 font-bold tracking-widest text-xs uppercase mb-2 block">
+                  Pemberian Pakan Presisi
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight">
                   ioPakan
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-base leading-relaxed">
-                  Sistem pemberian pakan otomatis yang presisi untuk unggas
-                  broiler. Dirancang untuk memberikan nutrisi yang konsisten dan
-                  optimal, mengurangi pemborosan pakan, dan meningkatkan
-                  efisiensi pertumbuhan dengan kontrol berbasis aplikasi mobile.
+                <p className="text-gray-600 dark:text-gray-300 mb-8 text-base leading-relaxed font-light">
+                  Sistem pemberian pakan otomatis yang presisi untuk unggas broiler. Dirancang untuk menyalurkan nutrisi secara konsisten, meminimalkan pemborosan pakan, dan mengoptimalkan efisiensi pertumbuhan melalui kontrol berbasis mobile app.
                 </p>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <span className="material-icons text-primary text-xl">
-                      check_circle
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center gap-3.5 text-gray-700 dark:text-gray-300 font-medium">
+                    <span className="material-icons text-primary bg-primary/10 p-1 rounded-full text-base flex-shrink-0">
+                      check
                     </span>
-                    Pemberian pakan otomatis terjadwal
+                    Pemberian pakan otomatis & terjadwal cerdas
                   </li>
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <span className="material-icons text-primary text-xl">
-                      check_circle
+                  <li className="flex items-center gap-3.5 text-gray-700 dark:text-gray-300 font-medium">
+                    <span className="material-icons text-primary bg-primary/10 p-1 rounded-full text-base flex-shrink-0">
+                      check
                     </span>
-                    Kapasitas pakan besar dan tahan lama
+                    Kapasitas pakan ekstra besar & tahan cuaca ekstrim
                   </li>
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <span className="material-icons text-primary text-xl">
-                      check_circle
+                  <li className="flex items-center gap-3.5 text-gray-700 dark:text-gray-300 font-medium">
+                    <span className="material-icons text-primary bg-primary/10 p-1 rounded-full text-base flex-shrink-0">
+                      check
                     </span>
-                    Monitoring konsumsi real-time
+                    Monitoring konsumsi pakan secara real-time
                   </li>
                 </ul>
                 <a
                   href="/products/iopakan"
-                  className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-green-700 transition-colors"
+                  className="group inline-flex items-center gap-2 px-6 py-3.5 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-semibold shadow-md hover:shadow-lg hover:shadow-green-500/20 hover:scale-[1.02] transition-all duration-300"
                 >
                   Pelajari Lebih Lanjut
-                  <span className="material-icons text-sm">arrow_forward</span>
+                  <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
               </div>
             </div>
 
             {/* Product 2: ioPeka */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="order-2 md:order-1">
-                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div className="lg:col-span-5 order-2 lg:order-1">
+                <span className="text-primary dark:text-green-400 font-bold tracking-widest text-xs uppercase mb-2 block">
+                  Sensor Lingkungan Kandang
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight">
                   ioPeka
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-base leading-relaxed">
-                  Sistem monitoring lingkungan kandang yang komprehensif. Pantau
-                  suhu, kelembaban, kualitas udara, dan parameter lingkungan
-                  lainnya untuk memastikan kondisi optimal bagi ternak Anda
-                  dengan alert otomatis untuk deviasi.
+                <p className="text-gray-600 dark:text-gray-300 mb-8 text-base leading-relaxed font-light">
+                  Sistem monitoring kondisi lingkungan kandang yang komprehensif. Memantau kelembaban, suhu ruangan, kualitas sirkulasi udara, serta parameter lingkungan penting lainnya untuk memastikan habitat sehat bagi ternak.
                 </p>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <span className="material-icons text-primary text-xl">
-                      check_circle
+                <ul className="space-y-4 mb-8">
+                  <li className="flex items-center gap-3.5 text-gray-700 dark:text-gray-300 font-medium">
+                    <span className="material-icons text-primary bg-primary/10 p-1 rounded-full text-base flex-shrink-0">
+                      check
                     </span>
-                    Peringatan kondisi kandang abnormal
+                    Peringatan instan apabila kondisi kandang abnormal
                   </li>
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <span className="material-icons text-primary text-xl">
-                      check_circle
+                  <li className="flex items-center gap-3.5 text-gray-700 dark:text-gray-300 font-medium">
+                    <span className="material-icons text-primary bg-primary/10 p-1 rounded-full text-base flex-shrink-0">
+                      check
                     </span>
-                    Monitoring suhu 24/7
+                    Monitoring suhu dan kelembaban 24/7 otomatis
                   </li>
                 </ul>
                 <a
                   href="/products/iopeka"
-                  className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-green-700 transition-colors"
+                  className="group inline-flex items-center gap-2 px-6 py-3.5 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-semibold shadow-md hover:shadow-lg hover:shadow-green-500/20 hover:scale-[1.02] transition-all duration-300"
                 >
                   Pelajari Lebih Lanjut
-                  <span className="material-icons text-sm">arrow_forward</span>
+                  <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </a>
               </div>
-              <div className="flex justify-center order-1 md:order-2">
+              <div className="lg:col-span-7 flex justify-center order-1 lg:order-2 relative group">
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-3xl filter blur-3xl opacity-70 scale-95 pointer-events-none group-hover:scale-105 transition-all duration-700" />
                 <img
                   src="images/product/ioPeka.webp"
-                  alt="ioPeka"
-                  className="w-full max-w-lg h-auto"
+                  alt="ioPeka Device"
+                  className="w-full max-w-lg h-auto relative z-10 drop-shadow-[0_20px_50px_rgba(0,147,18,0.12)] hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>
-
-            {/* Product 3: ioPantau */}
-            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="flex justify-center">
-                <img
-                  src="images/product/magz-vision.webp"
-                  alt="ioPantau"
-                  className="w-full max-w-lg h-auto"
-                />
-              </div>
-              <div>
-                <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                  ioPantau
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-base leading-relaxed">
-                  Sistem monitoring lingkungan kandang yang komprehensif. Pantau
-                  suhu, kelembaban, kualitas udara, dan parameter lingkungan
-                  lainnya untuk memastikan kondisi optimal bagi ternak Anda
-                  dengan alert otomatis untuk deviasi.
-                </p>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <span className="material-icons text-primary text-xl">
-                      check_circle
-                    </span>
-                    Sensor aktifitas ternak real-time
-                  </li>
-                  <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                    <span className="material-icons text-primary text-xl">
-                      check_circle
-                    </span>
-                    Deteksi gejala penyakit dini
-                  </li>
-                </ul>
-                <a
-                  href="/products/iopantau"
-                  className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-green-700 transition-colors"
-                >
-                  Pelajari Lebih Lanjut
-                  <span className="material-icons text-sm">arrow_forward</span>
-                </a>
-              </div>
-            </div> */}
           </div>
 
           {/* Integration Section */}
