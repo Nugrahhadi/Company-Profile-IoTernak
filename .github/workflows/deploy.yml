@@ -24,14 +24,24 @@ jobs:
       - name: Build Next.js App
         run: npm run build
 
-      - name: Deploy to Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Deploy to Hostinger via SSH/SFTP (rsync)
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 21                         
-          local-dir: ./out/ 
-          server-dir: ./
-          timeout: 60000                   
-          dangerous-clean-slate: false     
+          port: 65002
+          script: |
+            mkdir -p domains/ioternak.id/public_html
+            rm -rf domains/ioternak.id/public_html/*
+            
+      - name: Copy files via SCP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 65002
+          source: "out/*"
+          target: "domains/ioternak.id/public_html/"
+          strip_components: 1
