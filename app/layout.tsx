@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -74,14 +74,6 @@ export default function RootLayout({
         <main className="grow">{children}</main>
         <Footer />
         <GoogleAnalytics gaId="G-020VBT6T3X" />
-        <GoogleTagManager gtmId="GTM-NXP7PHTG" />
-        <Script id="google-ads-config" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('config', 'AW-18257353348');
-          `}
-        </Script>
       </body>
     </html>
   );

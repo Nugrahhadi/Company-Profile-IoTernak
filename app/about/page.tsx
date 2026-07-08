@@ -44,6 +44,17 @@ export default function About() {
                 perangkat IoT, dan manajemen peternak dalam satu genggaman yang
                 praktis.
               </p>
+              <div className="mt-6 flex justify-center">
+                <a
+                  href="https://drive.google.com/drive/folders/1kPtR0vBg-RUHW9FpCXhs8qAvUwZeoV8H"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-bold rounded-xl text-white bg-primary hover:bg-primary/90 dark:bg-secondary dark:text-gray-950 dark:hover:bg-secondary/90 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                  <span className="material-icons text-xl mr-2">download</span>
+                  Unduh Aplikasi IoTernak
+                </a>
+              </div>
             </div>
           </div>
         </div>
