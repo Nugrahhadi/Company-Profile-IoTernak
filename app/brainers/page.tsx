@@ -17,6 +17,7 @@ export default function AboutBrainers({
       specialty: "Tech Governance & Strategic Advisory",
       image: "/images/Pak-Irham.jpg",
       icon: "insights",
+      linkedin: "https://www.linkedin.com/in/mohammad-irham-akbar-91401a13b/",
     },
     {
       name: "Nugrahhadi Al Khawarizmi",
@@ -39,6 +40,16 @@ export default function AboutBrainers({
       linkedin: "https://linkedin.com/in/argaaryanta/",
     },
     {
+      name: "Aisha Cahyarani Nabila",
+      role: "Chief Operating Officer",
+      description:
+        "Sebagai penggerak operasional utama IoTernak, Aisha mengkoordinasikan seluruh aspek operasional perusahaan untuk memastikan efisiensi maksimal dan kelancaran eksekusi strategi bisnis. Dengan keahlian dalam optimasi proses dan manajemen lintas fungsi, ia memastikan setiap unit kerja beroperasi secara sinergis untuk mencapai target pertumbuhan dan kualitas layanan terbaik.",
+      specialty: "Operations Management & Process Optimization",
+      image: "/images/Icha.webp",
+      icon: "settings",
+      linkedin: "https://www.linkedin.com/in/aishacnabila/",
+    },
+    {
       name: "Lula Khaisha Delavia",
       role: "Creative & Marketing Manager",
       description:
@@ -46,7 +57,7 @@ export default function AboutBrainers({
       specialty: "Strategi Brand & Digital Marketing",
       image: "/images/Lula_Casual.webp",
       icon: "campaign",
-      linkedin: "https://linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/lula-khaisha-delavia-87372640a/",
     },
     {
       name: "Gita Nurmala",
@@ -56,7 +67,7 @@ export default function AboutBrainers({
       specialty: "Perencanaan & Manajemen Keuangan",
       image: "/images/Gita.jpg",
       icon: "trending_up",
-      linkedin: "https://linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/gitanurmala/",
     },
     {
       name: "Farhan Ibnu Majid",
@@ -66,7 +77,7 @@ export default function AboutBrainers({
       specialty: "Hardware IoT & Embedded Systems",
       image: "/images/Farhan.webp",
       icon: "build",
-      linkedin: "https://linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/farhan-ibnu-fajar2004/",
     },
 
   ];
