@@ -1,15 +1,16 @@
+"use client";
+
+import MarqueeGallery from "@/components/MarqueeGallery";
+
 export default function Products() {
   return (
     <>
-      {/* Hero Section - Modern, Clean & Elegant Agritech Style */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-20 bg-white">
-        {/* Dekorasi Background Halus */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-green-50 rounded-full blur-[120px] -mr-60 -mt-60 pointer-events-none z-0"></div>
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-50 rounded-full blur-[100px] -ml-40 -mb-20 pointer-events-none z-0"></div>
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12 xl:gap-16">
-            {/* Kolon Kiri: Teks */}
             <div className="w-full lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start order-1 lg:order-1">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 border border-green-200 text-green-700 text-sm font-semibold mb-6 shadow-sm">
                 <span className="relative flex h-3 w-3">
@@ -46,9 +47,7 @@ export default function Products() {
               </div>
             </div>
 
-            {/* Kolom Kanan: Gambar Visual Utama */}
             <div className="w-full lg:w-1/2 flex justify-center items-center order-2 lg:order-2 relative">
-              {/* Blob dekoratif di belakang gambar */}
               <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full blur-3xl opacity-70 transform scale-110 pointer-events-none"></div>
 
               <div className="relative z-10 w-full max-w-lg lg:max-w-none transform lg:scale-105 xl:scale-110">
@@ -63,12 +62,10 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Products Section - Clean White SaaS Layout */}
       <div
         className="relative pt-24 pb-32 bg-gray-50 overflow-hidden"
         id="products"
       >
-        {/* Abstract Background Elements (Soft Green) */}
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-green-200 to-transparent"></div>
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-green-100 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="absolute bottom-20 -left-40 w-[500px] h-[500px] bg-green-50 rounded-full blur-[120px] pointer-events-none"></div>
@@ -78,16 +75,14 @@ export default function Products() {
           <div className="relative group">
             <div className="absolute -inset-2 bg-gradient-to-r from-green-200 to-emerald-100 rounded-[2.5rem] blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
             <div className="relative bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center shadow-xl shadow-green-900/5">
-              {/* Image Section */}
               <div className="lg:col-span-5 flex justify-center relative">
                 <div className="relative w-full aspect-square max-w-md bg-green-50 rounded-3xl p-6 flex items-center justify-center overflow-hidden border border-green-100">
                   <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10"></div>
                   <img
                     alt="Mesin ioPakan"
                     className="object-cover w-full h-full relative z-10 group-hover:scale-105 transition-transform duration-700 ease-out mix-blend-multiply"
-                    src="/images/product/IoPakan/IoPakanNew.webp"
+                    src="/images/product/IoPakan/ioPakan.webp"
                   />
-                  {/* Floating Badge - Bahasa Indonesia */}
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md border border-green-200 text-green-700 px-2.5 py-1.5 rounded-full text-xs font-bold z-20 flex items-center gap-1 shadow-sm">
                     <span
                       className="material-icons text-green-600"
@@ -100,7 +95,6 @@ export default function Products() {
                 </div>
               </div>
 
-              {/* Content Section */}
               <div className="lg:col-span-7 flex flex-col justify-center">
                 <div className="inline-block px-4 py-1.5 rounded-full bg-green-100 text-green-700 text-sm font-bold w-max mb-4">
                   Sistem Distribusi Pakan
@@ -114,7 +108,6 @@ export default function Products() {
                   perlu lagi repot menakar manual.
                 </p>
 
-                {/* Grid Features */}
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <div className="flex items-start gap-3">
                     <div className="p-2.5 rounded-xl bg-green-50 text-green-600">
@@ -190,7 +183,6 @@ export default function Products() {
           <div className="relative group">
             <div className="absolute -inset-2 bg-gradient-to-r from-emerald-100 to-green-200 rounded-[2.5rem] blur opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-300"></div>
             <div className="relative bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center shadow-xl shadow-green-900/5">
-              {/* Content Section (Swapped order) */}
               <div className="lg:col-span-7 flex flex-col justify-center order-2 lg:order-1">
                 <div className="inline-block px-4 py-1.5 rounded-full bg-green-100 text-green-700 text-sm font-bold w-max mb-4">
                   Pemantau Lingkungan
@@ -204,7 +196,6 @@ export default function Products() {
                   nonstop.
                 </p>
 
-                {/* Grid Features */}
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <div className="flex items-start gap-3">
                     <div className="p-2.5 rounded-xl bg-green-50 text-green-600">
@@ -236,7 +227,6 @@ export default function Products() {
 
                 <div className="h-px w-full bg-gray-100 mb-8"></div>
 
-                {/* HaaS Pricing Block */}
                 <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 bg-green-50/80 p-6 rounded-2xl border border-green-200">
                   <div>
                     <p className="text-gray-600 text-sm mb-1 font-semibold">
@@ -275,7 +265,6 @@ export default function Products() {
                 </div>
               </div>
 
-              {/* Image Section */}
               <div className="lg:col-span-5 flex justify-center relative order-1 lg:order-2">
                 <div className="relative w-full aspect-square max-w-md bg-green-50 rounded-3xl p-6 flex items-center justify-center overflow-hidden border border-green-100">
                   <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10"></div>
@@ -284,7 +273,6 @@ export default function Products() {
                     className="object-cover w-full h-full relative z-10 group-hover:scale-105 transition-transform duration-700 ease-out mix-blend-multiply"
                     src="/images/product/ioPeka-1-1.webp"
                   />
-                  {/* Floating Alert Badge */}
                   <div
                     className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md border border-orange-200 text-orange-600 px-2.5 py-1.5 rounded-full text-xs font-bold z-20 flex items-center gap-1 shadow-sm animate-bounce"
                     style={{ animationDuration: "3s" }}
@@ -304,33 +292,121 @@ export default function Products() {
             </div>
           </div>
 
-          {/* CTA Section - Agritech Fresh Vibe */}
-          <div className="relative overflow-hidden rounded-2xl sm:rounded-[2.5rem] bg-green-600 p-6 sm:p-8 md:p-16 text-center shadow-2xl shadow-green-700/20 group">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/10 rounded-full -mr-48 -mt-48 blur-[80px]"></div>
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-400/20 rounded-full -ml-48 -mb-48 blur-[80px]"></div>
+          <MarqueeGallery />
 
-            <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
-              <span className="px-4 py-1.5 rounded-full bg-white/20 border border-white/30 text-white text-xs sm:text-sm font-bold mb-4 sm:mb-6 backdrop-blur-sm">
-                Gabung Bersama Peternak Sukses Lainnya
-              </span>
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 sm:mb-6 leading-tight">
-                Tinggalkan Cara Lama,
-                <br />
-                Mulai Ternak Lebih Pintar Hari Ini
-              </h2>
-              <p className="text-green-50 text-sm sm:text-base md:text-lg mb-6 sm:mb-10 max-w-2xl px-2 sm:px-0">
-                Cukup bayar langganan bulanan, tim IoTernak akan memasang alat
-                di kandang Anda dan memastikannya berjalan normal setiap hari.
-              </p>
-              <a
-                href="https://wa.me/6281234567890"
-                className="bg-white text-green-700 hover:bg-gray-50 hover:scale-105 transition-all duration-300 font-extrabold py-3 sm:py-4 px-6 sm:px-8 rounded-xl shadow-lg flex items-center gap-2 sm:gap-3 text-sm sm:text-base md:text-lg"
-              >
-                Tanya Jawab di WhatsApp Gratis
-                <span className="material-icons text-lg sm:text-xl">
-                  support_agent
-                </span>
-              </a>
+
+          {/* CTA Section */}
+          <div className="relative overflow-hidden rounded-3xl shadow-2xl shadow-green-900/30 border border-green-700/30">
+            <div className="grid lg:grid-cols-2 items-stretch min-h-[560px]">
+              <div className="relative overflow-hidden p-8 sm:p-10 lg:p-12 flex flex-col justify-center group min-h-[460px] lg:min-h-full">
+                <img
+                  src="/images/product/IoPakan/PenerapanIoPakan.webp"
+                  alt="Penerapan IoPakan di Kandang"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/85 to-slate-950/60"></div>
+                <div className="absolute inset-0 bg-emerald-950/50 backdrop-blur-[2px]"></div>
+
+                <div className="relative z-10">
+
+                  <h3 className="text-2xl sm:text-3xl font-black text-white mb-6 leading-tight">
+                    Fasilitas Lengkap <span className="text-emerald-300">Tanpa Biaya Tersembunyi</span>
+                  </h3>
+
+                  <div className="space-y-3.5">
+                    <div className="bg-slate-900/50 backdrop-blur-md border border-white/15 hover:border-emerald-400/40 rounded-2xl p-4 flex items-center gap-4 transition-all duration-300 shadow-lg hover:bg-slate-900/70 group/card">
+                      <div className="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-300 flex-shrink-0 group-hover/card:bg-emerald-500 group-hover/card:text-white transition-all duration-300">
+                        <span className="material-icons text-xl">handyman</span>
+                      </div>
+                      <div>
+                        <div className="font-bold text-white text-base sm:text-lg">Alat Dipasang Gratis</div>
+                        <div className="text-xs sm:text-sm text-emerald-100/80 leading-snug">Tim teknisi datang langsung ke kandang</div>
+                      </div>
+                    </div>
+
+                    <div className="bg-slate-900/50 backdrop-blur-md border border-white/15 hover:border-emerald-400/40 rounded-2xl p-4 flex items-center gap-4 transition-all duration-300 shadow-lg hover:bg-slate-900/70 group/card">
+                      <div className="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-300 flex-shrink-0 group-hover/card:bg-emerald-500 group-hover/card:text-white transition-all duration-300">
+                        <span className="material-icons text-xl">verified_user</span>
+                      </div>
+                      <div>
+                        <div className="font-bold text-white text-base sm:text-lg">Garansi Ganti Rusak</div>
+                        <div className="text-xs sm:text-sm text-emerald-100/80 leading-snug">Alat error? Langsung diganti baru</div>
+                      </div>
+                    </div>
+
+                    <div className="bg-slate-900/50 backdrop-blur-md border border-white/15 hover:border-emerald-400/40 rounded-2xl p-4 flex items-center gap-4 transition-all duration-300 shadow-lg hover:bg-slate-900/70 group/card">
+                      <div className="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-300 flex-shrink-0 group-hover/card:bg-emerald-500 group-hover/card:text-white transition-all duration-300">
+                        <span className="material-icons text-xl">engineering</span>
+                      </div>
+                      <div>
+                        <div className="font-bold text-white text-base sm:text-lg">Servis & Maintenance Rutin</div>
+                        <div className="text-xs sm:text-sm text-emerald-100/80 leading-snug">Teknisi cek kondisi alat berkala</div>
+                      </div>
+                    </div>
+
+                    <div className="bg-slate-900/50 backdrop-blur-md border border-white/15 hover:border-emerald-400/40 rounded-2xl p-4 flex items-center gap-4 transition-all duration-300 shadow-lg hover:bg-slate-900/70 group/card">
+                      <div className="w-12 h-12 rounded-xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-300 flex-shrink-0 group-hover/card:bg-emerald-500 group-hover/card:text-white transition-all duration-300">
+                        <span className="material-icons text-xl">system_update</span>
+                      </div>
+                      <div>
+                        <div className="font-bold text-white text-base sm:text-lg">Update Teknologi Terbaru</div>
+                        <div className="text-xs sm:text-sm text-emerald-100/80 leading-snug">Fitur baru otomatis didapat tanpa bayar lagi</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative overflow-hidden bg-gradient-to-br from-green-600 via-green-700 to-emerald-800 p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
+                <div className="absolute inset-0 bg-[url('/images/grid.svg')] opacity-10"></div>
+                <div className="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-400/20 rounded-full blur-3xl"></div>
+
+                <div className="relative z-10 text-left">
+
+                  <h2 className="text-3xl sm:text-4xl lg:text-4xl font-black text-white mb-6 leading-tight">
+                    Pusing Ngurus Kandang? <br />
+                    <span className="text-green-200">Biar IoTernak yang Kerja</span>
+                  </h2>
+
+                  <p className="text-green-50 text-base md:text-lg mb-8 leading-relaxed">
+                    Bayar bulanan mulai <span className="font-bold text-white text-xl">Rp 150rb</span>, dapat alat canggih + tim teknisi yang siaga 24/7. Gak perlu beli mahal, gak perlu pusing servis sendiri.
+                  </p>
+
+                  <div className="grid grid-cols-3 gap-4 mb-8">
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/20">
+                      <div className="text-2xl font-bold text-white">100+</div>
+                      <div className="text-xs text-green-100">Kandang Aktif</div>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/20">
+                      <div className="text-2xl font-bold text-white">24/7</div>
+                      <div className="text-xs text-green-100">Tim Support</div>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/20">
+                      <div className="text-2xl font-bold text-white">0%</div>
+                      <div className="text-xs text-green-100">Biaya Servis</div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <a
+                      href="https://wa.me/6281234567890?text=Halo%20IoTernak,%20mau%20tanya%20soal%20paket%20langganan"
+                      className="group inline-flex items-center justify-center gap-3 bg-white text-green-700 hover:bg-green-50 font-extrabold py-4 px-8 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                    >
+                      <span className="material-icons">chat</span>
+                      Konsultasi Gratis via WA
+                    </a>
+                    <a
+                      href="#products"
+                      className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white hover:bg-white/20 font-bold py-4 px-6 rounded-xl transition-all duration-300"
+                    >
+                      Lihat Paket Lengkap
+                      <span className="material-icons text-sm">arrow_upward</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

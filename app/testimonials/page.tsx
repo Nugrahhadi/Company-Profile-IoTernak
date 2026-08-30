@@ -38,14 +38,14 @@ export default function Testimonials() {
           </div>
 
           {/* Grid Abstrak Modern */}
-          <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-2 gap-4 md:gap-6 md:h-[600px]">
-            {/* Wide Image (1017x650) - Kiri Atas */}
-            <div className="md:col-span-8 md:row-span-1 rounded-3xl overflow-hidden relative group shadow-lg">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4">
+            {/* Wide Image (PembelianAlat2.webp) - Kiri Atas */}
+            <div className="md:col-span-8 h-[260px] sm:h-[300px] rounded-3xl overflow-hidden relative group shadow-lg">
               <div className="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-all duration-500 z-10"></div>
               <img
                 src="/images/Feedback/PembelianAlat2.webp"
                 alt="Instalasi IoTernak"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
               />
               <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-green-100 shadow-sm">
                 <p className="text-green-800 font-bold text-sm">
@@ -54,42 +54,43 @@ export default function Testimonials() {
               </div>
             </div>
 
-            {/* Tall Image (551x1080) - Kanan (Penuh) */}
-            <div className="md:col-span-4 md:row-span-2 rounded-3xl overflow-hidden relative group shadow-lg hidden md:block">
+            {/* Tall Image (PembelianAlat1.webp) - Kanan (Span 2 Rows) */}
+            <div className="md:col-span-4 md:row-span-2 h-[360px] md:h-full rounded-3xl overflow-hidden relative group shadow-lg">
               <div className="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-all duration-500 z-10"></div>
               <img
                 src="/images/Feedback/PembelianAlat1.webp"
                 alt="Penggunaan Alat IoTernak"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
               />
               <div className="absolute top-4 right-4 z-20 bg-green-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold shadow-md">
                 Kandang Terpantau 24/7
               </div>
+              <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-green-100 shadow-sm">
+                <p className="text-green-800 font-bold text-sm">
+                  Monitoring Kandang Real-time
+                </p>
+              </div>
             </div>
 
-            {/* Mobile View Only for Tall Image */}
-            <div className="md:hidden rounded-3xl overflow-hidden relative group shadow-lg h-[400px]">
-              <img
-                src="/images/Feedback/PembelianAlat1.webp"
-                alt="Penggunaan Alat IoTernak"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Square Image (1080x1080) - Kiri Bawah */}
-            <div className="md:col-span-4 md:row-span-1 rounded-3xl overflow-hidden relative group shadow-lg">
+            {/* Square Image (PembelianAlat.webp) - Kiri Bawah */}
+            <div className="md:col-span-4 h-[260px] sm:h-[300px] rounded-3xl overflow-hidden relative group shadow-lg">
               <div className="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-all duration-500 z-10"></div>
               <img
                 src="/images/Feedback/PembelianAlat.webp"
                 alt="Serah Terima IoTernak"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
               />
+              <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-green-100 shadow-sm">
+                <p className="text-green-800 font-bold text-sm">
+                  Serah Terima Unit ke Peternak
+                </p>
+              </div>
             </div>
 
-            {/* Blok Teks Hijau - Tengah Bawah */}
-            <div className="md:col-span-4 md:row-span-1 rounded-3xl bg-gradient-to-br from-green-600 to-emerald-700 p-8 flex flex-col justify-center text-white shadow-lg relative overflow-hidden group">
+            {/* Blok Teks Hijau - Teruji di Lapangan */}
+            <div className="md:col-span-4 h-[260px] sm:h-[300px] rounded-3xl bg-gradient-to-br from-green-600 to-emerald-700 p-6 sm:p-8 flex flex-col justify-center text-white shadow-lg relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-10 -mt-10 blur-xl"></div>
-              <span className="material-icons text-4xl mb-4 text-green-200">
+              <span className="material-icons text-4xl mb-3 text-green-200">
                 handshake
               </span>
               <h3 className="text-2xl font-extrabold mb-2">
@@ -100,6 +101,51 @@ export default function Testimonials() {
                 berdebu dan lembap. Pemasangan dilakukan langsung oleh teknisi
                 ahli kami.
               </p>
+            </div>
+
+            {/* Image Baris Ke-3: PemasanganAlat.webp */}
+            <div className="md:col-span-4 h-[260px] sm:h-[300px] rounded-3xl overflow-hidden relative group shadow-lg">
+              <div className="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+              <img
+                src="/images/Feedback/PemasanganAlat.webp"
+                alt="Proses Pemasangan Alat"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+              />
+              <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-green-100 shadow-sm">
+                <p className="text-green-800 font-bold text-sm">
+                  Pemasangan Langsung oleh Teknisi
+                </p>
+              </div>
+            </div>
+
+            {/* Image Baris Ke-3: ioPakanDalamKandang.webp */}
+            <div className="md:col-span-4 h-[260px] sm:h-[300px] rounded-3xl overflow-hidden relative group shadow-lg">
+              <div className="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+              <img
+                src="/images/Feedback/ioPakanDalamKandang.webp"
+                alt="Pengoperasian ioPakan di Kandang"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+              />
+              <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-green-100 shadow-sm">
+                <p className="text-green-800 font-bold text-sm">
+                  Penerapan ioPakan di Kandang
+                </p>
+              </div>
+            </div>
+
+            {/* Image Baris Ke-3: PembelianAlat3.webp */}
+            <div className="md:col-span-4 h-[260px] sm:h-[300px] rounded-3xl overflow-hidden relative group shadow-lg">
+              <div className="absolute inset-0 bg-gray-900/10 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+              <img
+                src="/images/Feedback/PembelianAlat3.webp"
+                alt="Pendampingan Peternak"
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+              />
+              <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl border border-green-100 shadow-sm">
+                <p className="text-green-800 font-bold text-sm">
+                  Pendampingan & Edukasi Peternak
+                </p>
+              </div>
             </div>
           </div>
         </div>

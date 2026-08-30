@@ -225,7 +225,7 @@ export default function Home() {
               <div className="lg:col-span-7 flex justify-center relative group">
                 <div className="absolute inset-0 bg-gradient-to-tr from-secondary/10 to-transparent rounded-3xl filter blur-3xl opacity-70 scale-95 pointer-events-none group-hover:scale-105 transition-all duration-700" />
                 <img
-                  src="images/product/IoPakan/IoPakanNew.webp"
+                  src="images/product/IoPakan/ioPakan.webp"
                   alt="ioPakan Device"
                   className="w-full max-w-lg h-auto relative z-10 drop-shadow-[0_20px_50px_rgba(2,185,19,0.12)] hover:scale-[1.02] transition-transform duration-500"
                 />

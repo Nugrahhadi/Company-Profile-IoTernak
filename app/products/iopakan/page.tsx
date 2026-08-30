@@ -48,7 +48,7 @@ export default function IoPakanDetail() {
           <img
             alt="Mesin ioPakan IoTernak"
             className="relative z-10 w-full max-w-lg lg:max-w-2xl object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
-            src="/images/product/IoPakan/IoPakanNew.webp"
+            src="/images/product/IoPakan/ioPakan.webp"
           />
         </div>
 
