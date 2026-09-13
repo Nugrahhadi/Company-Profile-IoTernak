@@ -306,7 +306,7 @@ export default function Products() {
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/85 to-slate-950/60"></div>
-                <div className="absolute inset-0 bg-emerald-950/50 backdrop-blur-[2px]"></div>
+                <div className="absolute inset-0 bg-emerald-950/30 backdrop-blur-[2px]"></div>
 
                 <div className="relative z-10">
 

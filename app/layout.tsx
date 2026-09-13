@@ -6,32 +6,36 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ioternak.id"),
   title: "IoTernak - Ecosystem",
   description: "Revolutionizing livestock operations with smart IoT technology",
   icons: {
     icon: [
       {
-        url: "/images/favicon_ioternak/favicon-32x32.png",
+        url: "/images/favicon_io/favicon-32x32.png",
         sizes: "32x32",
         type: "image/png",
       },
       {
-        url: "/images/favicon_ioternak/favicon-16x16.png",
+        url: "/images/favicon_io/favicon-16x16.png",
         sizes: "16x16",
         type: "image/png",
       },
+      {
+        url: "/images/favicon_io/favicon.ico",
+      },
     ],
-    shortcut: "/images/favicon_ioternak/favicon.ico",
-    apple: "/images/favicon_ioternak/apple-touch-icon.png",
+    shortcut: "/images/favicon_io/favicon.ico",
+    apple: "/images/favicon_io/apple-touch-icon.png",
   },
-  manifest: "/images/favicon_ioternak/manifest.webmanifest",
+  manifest: "/images/favicon_io/site.webmanifest",
   openGraph: {
     title: "IoTernak - Ecosystem",
     description:
       "Revolutionizing livestock operations with smart IoT technology",
     images: [
       {
-        url: "/images/favicon_ioternak/android-chrome-512x512.png",
+        url: "/images/favicon_io/android-chrome-512x512.png",
         width: 512,
         height: 512,
       },
@@ -39,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/favicon_ioternak/android-chrome-192x192.png"],
+    images: ["/images/favicon_io/android-chrome-192x192.png"],
   },
   verification: {
     google: "6c5YszP4IuUxyd5Ck7-Qj7yhrvvarBfblzX48dtb3wQ",
