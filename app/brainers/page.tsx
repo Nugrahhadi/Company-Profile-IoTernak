@@ -50,24 +50,14 @@ export default function AboutBrainers({
       linkedin: "https://www.linkedin.com/in/aishacnabila/",
     },
     {
-      name: "Lula Khaisha Delavia",
-      role: "Creative & Marketing Manager",
+      name: "Annisa Bunga Maharani",
+      role: "Chief Marketing Officer",
       description:
-        "Seorang strategist kreatif yang mendorong visi brand dan kehadiran pasar IoTernak. Lula mengembangkan kampanye marketing yang menarik dan konten kreatif yang terhubung dengan peternak dan pemangku kepentingan, memastikan pesan kami beresonansi di semua saluran.",
-      specialty: "Strategi Brand & Digital Marketing",
-      image: "/images/Lula_Casual.webp",
+        "Sebagai Chief Marketing Officer di IoTernak, Bunga memimpin strategi pemasaran menyeluruh, penguatan brand identity, dan perluasan jangkauan pasar. Ia berfokus menjalin kolaborasi strategis serta mengedukasi dan menghubungkan para peternak modern dengan solusi teknologi IoTernak yang tepat guna dan berkelanjutan.",
+      specialty: "Brand Strategy & Market Expansion",
+      image: "/images/bunga.webp",
       icon: "campaign",
-      linkedin: "https://www.linkedin.com/in/lula-khaisha-delavia-87372640a/",
-    },
-    {
-      name: "Gita Nurmala",
-      role: "Financial Manager",
-      description:
-        "Seorang profesional keuangan berpengalaman yang mengelola kesehatan fiskal dan investasi strategis IoTernak. Gita memastikan alokasi sumber daya yang efisien dan perencanaan keuangan untuk mendukung pertumbuhan dan keberlanjutan jangka panjang kami.",
-      specialty: "Perencanaan & Manajemen Keuangan",
-      image: "/images/Gita.jpg",
-      icon: "trending_up",
-      linkedin: "https://www.linkedin.com/in/gitanurmala/",
+      linkedin: "https://www.linkedin.com/in/annsamaharan/",
     },
     {
       name: "Farhan Ibnu Majid",
@@ -78,6 +68,26 @@ export default function AboutBrainers({
       image: "/images/Farhan.webp",
       icon: "build",
       linkedin: "https://www.linkedin.com/in/farhan-ibnu-fajar2004/",
+    },
+    {
+      name: "Lula Khaisha Delavia",
+      role: "Creative & Marketing Manager",
+      description:
+        "Seorang strategist kreatif yang mendorong visi brand dan kehadiran pasar IoTernak. Lula mengembangkan kampanye marketing yang menarik dan konten kreatif yang terhubung dengan peternak dan pemangku kepentingan, memastikan pesan kami beresonansi di semua saluran.",
+      specialty: "Content Strategy & Digital Marketing",
+      image: "/images/Lula_Casual.webp",
+      icon: "palette",
+      linkedin: "https://www.linkedin.com/in/lula-khaisha-delavia-87372640a/",
+    },
+    {
+      name: "Gita Nurmala",
+      role: "Financial Manager",
+      description:
+        "Seorang profesional keuangan berpengalaman yang mengelola kesehatan fiskal dan investasi strategis IoTernak. Gita memastikan alokasi sumber daya yang efisien dan perencanaan keuangan untuk mendukung pertumbuhan dan keberlanjutan jangka panjang kami.",
+      specialty: "Financial Planning & Management",
+      image: "/images/Gita.jpg",
+      icon: "trending_up",
+      linkedin: "https://www.linkedin.com/in/gitanurmala/",
     },
 
   ];
