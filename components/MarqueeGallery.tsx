@@ -68,10 +68,10 @@ export default function MarqueeGallery() {
     <div className="relative py-10 md:py-14 overflow-hidden -mx-6 sm:-mx-10 md:-mx-16 lg:-mx-24 xl:-mx-36">
       {/* Header Section */}
       <div className="text-center mb-10 px-6">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-green-100/90 border border-green-200 text-green-700 text-xs font-bold mb-3 shadow-xs">
+        {/* <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-green-100/90 border border-green-200 text-green-700 text-xs font-bold mb-3 shadow-xs">
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
           Dokumentasi Lapangan
-        </div>
+        </div> */}
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-2">
           Dipercaya Peternak di Seluruh Indonesia
         </h3>

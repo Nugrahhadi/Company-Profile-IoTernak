@@ -139,41 +139,43 @@ export default function Products() {
 
                 <div className="h-px w-full bg-gray-100 mb-8"></div>
 
-                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 bg-green-50/80 p-6 rounded-2xl border border-green-200">
+                <div className="bg-green-50/80 p-6 rounded-2xl border border-green-200">
                   <div>
                     <p className="text-gray-600 text-sm mb-1 font-semibold">
-                      Berlangganan mulai dari
+                      Beri Pakan Otomatis Dengan Harga
                     </p>
                     <div className="flex items-baseline gap-1">
-                      <span className="text-4xl md:text-5xl font-extrabold text-green-700">
-                        Rp 200rb
+                      <span className="text-4xl md:text-5xl font-extrabold text-green-700 whitespace-nowrap">
+                        Rp 2.500.000
                       </span>
-                      <span className="text-gray-500 font-medium">/ bulan</span>
                     </div>
-                    <ul className="mt-3 space-y-2">
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mt-4">
+                    <ul className="space-y-2">
                       <li className="text-sm text-gray-700 flex items-center gap-2 font-medium">
                         <span className="material-icons text-green-500 text-base">
                           check_circle
                         </span>{" "}
-                        Garansi alat seumur hidup
+                        Garansi alat 1 tahun
                       </li>
                       <li className="text-sm text-gray-700 flex items-center gap-2 font-medium">
                         <span className="material-icons text-green-500 text-base">
                           check_circle
                         </span>{" "}
-                        Gratis servis dan perawatan rutin
+                        Gratis servis dan perawatan rutin 1 tahun
                       </li>
                     </ul>
+                    <a
+                      href="/products/iopakan"
+                      className="bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2 whitespace-nowrap shadow-md shadow-green-600/20 hover:-translate-y-0.5 flex-shrink-0"
+                    >
+                      Dapatkan Sekarang{" "}
+                      <span className="material-icons text-sm">
+                        arrow_forward
+                      </span>
+                    </a>
                   </div>
-                  <a
-                    href="/products/iopakan"
-                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2 whitespace-nowrap shadow-md shadow-green-600/20 hover:-translate-y-0.5"
-                  >
-                    Daftar Sekarang{" "}
-                    <span className="material-icons text-sm">
-                      arrow_forward
-                    </span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -227,23 +229,25 @@ export default function Products() {
 
                 <div className="h-px w-full bg-gray-100 mb-8"></div>
 
-                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 bg-green-50/80 p-6 rounded-2xl border border-green-200">
+                <div className="bg-green-50/80 p-6 rounded-2xl border border-green-200">
                   <div>
                     <p className="text-gray-600 text-sm mb-1 font-semibold">
-                      Berlangganan mulai dari
+                      Monitoring Kandangmu Dengan Harga
                     </p>
                     <div className="flex items-baseline gap-1">
-                      <span className="text-4xl md:text-5xl font-extrabold text-green-700">
-                        Rp 150rb
+                      <span className="text-4xl md:text-5xl font-extrabold text-green-700 whitespace-nowrap">
+                        Rp 400.000
                       </span>
-                      <span className="text-gray-500 font-medium">/ bulan</span>
                     </div>
-                    <ul className="mt-3 space-y-2">
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mt-4">
+                    <ul className="space-y-2">
                       <li className="text-sm text-gray-700 flex items-center gap-2 font-medium">
                         <span className="material-icons text-green-500 text-base">
                           check_circle
                         </span>{" "}
-                        Penggantian sensor jika rusak
+                        Penggantian sensor jika rusak (1 tahun)
                       </li>
                       <li className="text-sm text-gray-700 flex items-center gap-2 font-medium">
                         <span className="material-icons text-green-500 text-base">
@@ -252,16 +256,16 @@ export default function Products() {
                         Pembaruan aplikasi gratis
                       </li>
                     </ul>
+                    <a
+                      href="/products/iopeka"
+                      className="bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2 whitespace-nowrap shadow-md shadow-green-600/20 hover:-translate-y-0.5 flex-shrink-0"
+                    >
+                      Dapatkan Sekarang{" "}
+                      <span className="material-icons text-sm">
+                        arrow_forward
+                      </span>
+                    </a>
                   </div>
-                  <a
-                    href="/products/iopeka"
-                    className="bg-green-600 hover:bg-green-700 text-white px-6 py-3.5 rounded-xl font-bold transition-all flex items-center justify-center gap-2 whitespace-nowrap shadow-md shadow-green-600/20 hover:-translate-y-0.5"
-                  >
-                    Daftar Sekarang{" "}
-                    <span className="material-icons text-sm">
-                      arrow_forward
-                    </span>
-                  </a>
                 </div>
               </div>
 

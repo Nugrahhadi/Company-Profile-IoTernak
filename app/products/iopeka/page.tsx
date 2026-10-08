@@ -26,47 +26,47 @@ export default function IoPekaDetail() {
 
   return (
     <div className="bg-white min-h-screen text-gray-900 font-sans selection:bg-green-500 selection:text-white">
-      
+
       {/* Main Split Layout */}
       <div className="flex flex-col lg:flex-row min-h-screen">
-        
+
         {/* KIRI: Sticky Product Showcase (Immersive 50% Width) - Kembali ke Hijau */}
         <div className="w-full lg:w-1/2 bg-[#F3F8F5] lg:sticky lg:top-0 lg:h-screen flex items-center justify-center p-10 lg:pt-20 relative overflow-hidden">
           {/* Abstract Organic Background Element */}
           <div className="absolute top-1/4 -left-20 w-96 h-96 bg-green-200/50 rounded-full mix-blend-multiply filter blur-[80px] animate-pulse"></div>
           <div className="absolute bottom-1/4 -right-20 w-[30rem] h-[30rem] bg-emerald-200/40 rounded-full mix-blend-multiply filter blur-[100px] animate-pulse" style={{ animationDelay: "2s" }}></div>
-          
+
           {/* Badge Absolute */}
           <div className="absolute top-24 lg:top-32 left-10 lg:left-20 bg-white px-4 py-2 rounded-full shadow-xl shadow-green-900/10 border border-green-100 flex items-center gap-3 z-20">
-             <div className="w-2 h-2 rounded-full bg-green-500 animate-ping"></div>
-             <span className="text-sm font-extrabold text-green-700 uppercase tracking-wider">Sensor Aktif 24/7</span>
+            <div className="w-2 h-2 rounded-full bg-green-500 animate-ping"></div>
+            <span className="text-sm font-extrabold text-green-700 uppercase tracking-wider">Sensor Aktif 24/7</span>
           </div>
 
           <img
             alt="Sensor Lingkungan ioPeka"
             className="relative z-10 w-full max-w-sm lg:max-w-md object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
-            src="/images/product/ioPeka.webp" 
+            src="/images/product/ioPeka.webp"
           />
         </div>
 
         {/* KANAN: Scrollable Content Area */}
         <div className="w-full lg:w-1/2 px-6 py-12 lg:px-20 lg:py-16 xl:px-28 xl:py-24 flex flex-col justify-center">
-          
+
           {/* ACTION BAR */}
           <div className="flex flex-wrap justify-between items-center gap-4 mb-10 pt-4 lg:pt-0">
-            <a 
-              href="/products" 
+            <a
+              href="/products"
               className="group flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-green-600 transition-colors"
             >
               <span className="material-icons text-base transition-transform group-hover:-translate-x-1">arrow_back</span>
               Kembali ke Produk
             </a>
 
-            <button 
+            <button
               onClick={() => {
                 const url = typeof window !== "undefined" ? window.location.href : "";
                 if (navigator.share) {
-                  navigator.share({ url }).catch(() => {});
+                  navigator.share({ url }).catch(() => { });
                 } else {
                   navigator.clipboard.writeText(url);
                   alert("Tautan berhasil disalin!");
@@ -81,7 +81,7 @@ export default function IoPekaDetail() {
           {/* Header Typography */}
           <div className="mb-12">
             <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-900 tracking-tighter mb-6 leading-[1.1]">
-              Peka Terhadap <br/>
+              Peka Terhadap <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-emerald-600">Kenyamanan Ternak.</span>
             </h1>
             <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-xl font-medium">
@@ -160,26 +160,25 @@ export default function IoPekaDetail() {
 
           {/* HaaS Pricing "Ticket" Block */}
           <div className="relative bg-[#0F172A] rounded-[2rem] p-8 lg:p-10 text-white overflow-hidden shadow-2xl mb-20 transform hover:-translate-y-2 transition-transform duration-500">
-             {/* Ticket effect cutouts */}
+            {/* Ticket effect cutouts */}
             <div className="absolute top-1/2 -left-4 w-8 h-8 bg-white rounded-full transform -translate-y-1/2 hidden lg:block"></div>
             <div className="absolute top-1/2 -right-4 w-8 h-8 bg-white rounded-full transform -translate-y-1/2 hidden lg:block"></div>
-            
+
             <div className="absolute top-0 right-0 w-64 h-64 bg-green-500/20 rounded-full blur-[60px] pointer-events-none"></div>
-            
+
             <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-8 relative z-10">
               <div>
                 <span className="inline-block px-3 py-1 bg-white/10 rounded-lg text-green-400 text-xs font-bold tracking-widest uppercase mb-4 border border-white/10">
-                  Paket Langganan
+                  Monitoring Kandangmu Dengan Harga
                 </span>
                 <div className="flex items-end gap-2 mb-2">
-                  <span className="text-5xl lg:text-6xl font-black tracking-tight">Rp 150rb</span>
-                  <span className="text-gray-400 font-medium mb-2">/ bulan</span>
+                  <span className="text-5xl lg:text-6xl font-black tracking-tight">Rp 400.000</span>
                 </div>
               </div>
 
               <div className="w-full xl:w-auto">
                 <a
-                  href="https://wa.me/6281234567890?text=Halo%20IoTernak,%20saya%20tertarik%20berlangganan%20ioPeka."
+                  href="https://wa.me/6281234567890?text=Halo%20IoTernak,%20saya%20tertarik%20membeli%20ioPeka."
                   className="group w-full xl:w-auto flex items-center justify-center gap-3 bg-green-500 hover:bg-green-400 text-gray-900 font-extrabold text-lg px-8 py-4 rounded-2xl transition-all"
                 >
                   Pesan Sekarang
@@ -201,7 +200,7 @@ export default function IoPekaDetail() {
                 <img src="/images/product/IoPeka/Penerapan-IoPeka1.jpg" alt="Pemasangan Sensor" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
               </button>
-              
+
               <button
                 type="button"
                 onClick={() => openModal("/images/product/IoPeka/Penerapan-IoPeka.webp")}

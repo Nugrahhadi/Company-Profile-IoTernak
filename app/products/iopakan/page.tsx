@@ -71,7 +71,7 @@ export default function IoPakanDetail() {
                 const url =
                   typeof window !== "undefined" ? window.location.href : "";
                 if (navigator.share) {
-                  navigator.share({ url }).catch(() => {});
+                  navigator.share({ url }).catch(() => { });
                 } else {
                   navigator.clipboard.writeText(url);
                   alert("Tautan berhasil disalin!");
@@ -182,21 +182,18 @@ export default function IoPakanDetail() {
             <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-8 relative z-10">
               <div>
                 <span className="inline-block px-3 py-1 bg-white/10 rounded-lg text-green-400 text-xs font-bold tracking-widest uppercase mb-4 border border-white/10">
-                  Paket Langganan
+                  Beri Pakan Otomatis Dengan Harga
                 </span>
                 <div className="flex items-end gap-2 mb-2">
                   <span className="text-5xl lg:text-6xl font-black tracking-tight">
-                    Rp 200rb
-                  </span>
-                  <span className="text-gray-400 font-medium mb-2">
-                    / bulan
+                    Rp 2.500.000
                   </span>
                 </div>
               </div>
 
               <div className="w-full xl:w-auto">
                 <a
-                  href="https://wa.me/6281234567890?text=Halo%20IoTernak,%20saya%20tertarik%20berlangganan%20ioPakan."
+                  href="https://wa.me/6281234567890?text=Halo%20IoTernak,%20saya%20tertarik%20membeli%20ioPakan."
                   className="group w-full xl:w-auto flex items-center justify-center gap-3 bg-green-500 hover:bg-green-400 text-gray-900 font-extrabold text-lg px-8 py-4 rounded-2xl transition-all"
                 >
                   Pesan Sekarang
